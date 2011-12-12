@@ -1,0 +1,396 @@
+2010-09-20 TADA Tadashi <t@tdtds.jp>
+	* Release 3.0.1.
+
+2010-09-08 TADA Tadashi <t@tdtds.jp>
+	* plugin/blog-category.rb: decreased times of method calling.
+
+2010-08-28  SHIBATA Hiroshi  <shibata.hiroshi@gmail.com>
+	* Release 3.0.0
+
+2009-11-19 TADA Tadashi <t@tdtds.jp>
+	* plugin/{ja|en}/blog-style.rb: comment_description -> comment_description_default.
+
+2009-08-03 TADA Tadashi <t@tdtds.jp>
+	* release 2.3.3.
+
+2009-05-08 TADA Tadashi <t@tdtds.jp>
+	* release 2.3.2.
+
+2009-04-15 SHIBATA Hiroshi <shibata.hiroshi@gmail.com>
+	* tdiary/*.rb: converted to utf-8.
+	
+2008-10-19 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.3.1.
+
+2008-08-01 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/title-navi.rb: reverted dirty hack of #116.
+
+2008-07-17 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/title-navi.rb: dirty hack for #116.
+
+2008-07-11 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/blog-style.rb, title-navi.rb: moved CSS to hide date fields from
+	title-navi.rb to blog-style.rb.
+
+2008-07-06 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: added option 'whatsnew_list.url'.
+
+2008-06-09 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/ja/*.rb: converted to UTF-8.
+
+2008-02-29 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.2.1.
+
+2008-01-05 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: delete category tags from whatsnew_list's
+	output.
+
+2007-12-16 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.2.0.
+
+2007-11-14 TADA Tadashi <sho@spc.gr.jp>
+	* tdiary/blog_style.rb: fixed bug of newdate that dose not generate right
+	date.
+
+2007-09-23 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: splited CDATA section by each ']]>'.
+
+2007-05-01 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: add label elements in update form.
+
+2007-02-17 TADA Tadashi <sho@spc.gr.jp>
+	* blog-category.rb: move help messages to Wiki.
+
+2007-02-13 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: support footnote.rb and add 'feed?' method.
+	* lm.rb: no output in generating feed.
+
+2007-01-18 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: fix charset to UTF-8, and using to_utf8 method.
+
+2007-01-17 TADA Tadashi <sho@spc.gr.jp>
+	* ja/whatsnew-list.rb: use NKF insted of Uconv.
+
+2007-01-13 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatnew-list.rb: rewind about over escape in <title> of feed's item.
+
+2007-01-11 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/*.rb: modified to use ERB::Util.h instead of CGI::escpaeHTML and
+	escape base-html.
+
+2007-01-05 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatnew-list.rb: feed updates without filtered comments.
+	* plugin/whatnew-list.rb: replace labels 'RDF' to 'feed'.
+
+2006-04-15 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.1.4.
+
+2006-03-18 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatnew-list.rb: follow core 2.1.3.20060318.
+	* plugin/whatnew-list.rb: support Mobile Link Discovery.
+
+2005-10-20 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/archive.rb: fix error under running tdiary_search.
+	* plugin/blog-style.rb: separate from archive.rb.
+
+2005-10-16 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: insert correct counts of comments and TrackBacks.
+
+2005-10-13 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: support dc:subject element in RSS for categories.
+
+2005-10-09 TADA Tadashi <sho@spc.gr.jp>
+	* README: fix about style file settings.
+
+2005-10-07 TADA Tadashi <sho@spc.gr.jp>
+	* tdiary/blogwiki_style.rb: delete duplicated div.section.
+
+2005-09-29 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.1.3.
+
+2002-09-26 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/whatnew-list.rb: fix bug to count TrackBack without tb-show.rb.
+
+2002-09-26 vette <vette at mail.ne.jp>
+	* plugin/whatsnew-list.rb: fix bug to call body_enter_proc.
+
+2002-09-25 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/recent-entry.rb: remove category from title.
+	* plugin/whatnew-list.rb: apply_plugin for each entry.
+
+2002-09-21 vette <vette at mail.ne.jp>
+	* plugin/blog-category.rb: insert category list into update form.
+
+2002-09-19 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: add a checkbox for don't update RSS, and some bug fix.
+
+2002-09-18 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: append 'Comments(N)' and 'TrackBacks(M)' into
+	description of RSS.
+	* plugin/title-navi.rb: hide date fields also in showcomment mode.
+
+2002-09-16 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/title-navi.rb: prev/next navigation in edit mode.
+	* plugin/title-navi.rb: hide date fields in edit mode by CSS.
+	* plugin/whatsnew-list.rb: check permission of RDF file.
+
+2002-09-09 TADA Tadahi <sho@spc.gr.jp>
+	* README: document improved.
+	* recent-entry.rb: merge recent-entry2.rb into recent-entry.rb.
+	* recent-entry2.rb: delete.
+	* blog-category.rb, whatsnew-list.rb: show denial message in seure mode.
+
+2002-09-08 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: use description and benner in system preferences.
+
+2002-09-06 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: fix bad condition to output link element into
+	HTML header.
+	* plugin/whatsnew-list.rb: fix error when no banner setting.
+
+2002-09-06 vette <vette at mail.ne.jp>
+	* plugin/whatsnew-list.rb: fix about relative path of image and typo.
+
+2002-09-05 TADA Tadahi <sho@spc.gr.jp>
+	* tdiary/blogwiki_style.rb: support new Wiki style in tDiary 2.1.2.20050905.
+	* plugin/blog-style.rb: overwrite subtitle_link to delete section anchor.
+	* plugin/whatsnew-list.rb: title set to 'RSS' in link element of RSS
+	AutoDiscovery.
+
+2002-08-29 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/title-link.rb: disable link in day mode.
+	* README*: add about title-link.rb plugin.
+
+2002-08-26 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/blog-category.rb: support Plugin#title_proc, new feature after
+	  tDiary 2.1.2.20050826.
+	* add new plugin: title-link.rb: make permalink include all of title.
+	* blogwiki_style.rb: remove about category.
+
+2002-08-25 TADA Tadahi <sho@spc.gr.jp>
+	* plugin/blog-category.rb: specify genre of preference.
+
+2005-07-29 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/blog-category.rb: fix broken title after changing comment status.
+
+2005-07-20 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.1.2.
+
+2005-07-13 TADA Tadashi <sho@spc.gr.jp>
+	* tdiary.conf.sample: add list of bots.
+
+2005-06-30 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/blog-style.rb: show archive serial in <title> when month mode.
+
+2005-06-22 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/blog_category.rb: define Diary#stripped_title in comment mode.
+
+2005-06-09 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.1.1.
+
+2005-06-04 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/archive.rb: support navi_user_month.
+
+2005-06-03 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/blog-style.b, tdiary/blogwiki_style.rb: support 'before/after n days' mode.
+
+2005-04-06 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/recent-entry.rb: fix bug about escape title.
+
+2005-03-22  URABE Shyouhei  <shyouhei@ice.uec.ac.jp>
+	* tdiary/blogrd_style.rb (RD::RD2BlogVisitor::apply_to_Headline): bug fix in headline levels
+
+2005-03-09 TADA Tadashi <sho@spc.gr.jp>
+	* recent-entry.rb, recent-entry2.rb: remove HTML tag in title.
+
+2004-06-27 TADA Tadashi <sho@spc.gr.jp>
+	* release 2.0.0.
+
+2004-06-18 TADA Tadashi <sho@spc.gr.jp>
+	* theme/blog/blog.css: modify sidebar layout.
+	* plugin/blog-category.rb: support trackreceive mode.
+
+2004-05-22 TADA Tadashi <sho@spc.gr.jp>
+	* theme/blog/blog.css: add '@charset "euc-jp";'.
+	* plugin/title-navi.rb: fix bug when specified not existend date.
+
+2004-05-16 TADA Tadashi <sho@spc.gr.jp>
+	* tdiary.conf.sample*: add self URL into @no_referer. thanks ZnZ <zn@mbf.nifty.com>.
+
+2004-05-09 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: support absolute path of @conf.index.
+
+2004-05-06 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: output full text into description.
+
+2004-05-04 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: add description of items into rdf.
+
+2004-03-31 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: add adf:about attr into <channel>.
+
+2004-03-20 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/blog-style.rb: disable section of TrackBack source.
+
+2004-02-26 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: add <dc:creator> into RDF.
+
+2004-02-19 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: support conf_proc and split English resource.
+
+2004-02-18 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: remove debug print. thanks MATSUOKA Kohei <kohei@machu.jp>.
+
+2004-02-17 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: fix about <link> element in HTML header.
+
+2004-01-18 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: hide category in the list.
+
+2003-12-12 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: add whatsnew_list.rdf.image options. thanks Kouhei Sutou <kou@cozmixng.org>.
+
+2003-12-03 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: apply plugin to rdf file.
+
+2003-11-27 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: support Config#base_url.
+
+2003-11-13 TADA Tadashi <sho@spc.gr.jp>
+	* release 1.5.6.
+
+2003-11-07 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/whatsnew-list.rb: add information to HTML header for Auto-Discovery.
+	* plugin/whatsnew-list.rb: i18n.
+
+2003-10-24 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/title-navi.rb: apply_plugin support.
+
+2003-10-15 Junichiro Kita <kita@kitaj.no-ip.com>
+	* plugin/blog-category.rb: split language resource.
+
+2003-10-14 TADA Tadashi <sho@spc.gr.jp>
+	* plugin/blog-style.rb: split language resource.
+	* plugin/blog-style_ja.rb: marged to blug-style.rb.
+	* README.*: modified using 01sp.rb to select plugins.
+
+2003-10-12 Junichiro Kita <kita@kitaj.no-ip.com>
+	* plugin/blog-category.rb: require 'pstore'.
+
+2003-10-09 Junichiro Kita <kita@kitaj.no-ip.com>
+	* plugin/blog-category.rb: space character after [category name] is omissible.
+
+2003-09-30 Junichiro Kita <kita@kitaj.no-ip.com>
+	* plugin/category.rb, blog-category.rb: move category.rb to blog-category.rb.
+
+2003-09-29 Junichiro Kita <kita@kitaj.no-ip.com>
+	* README, README.en: document for category.rb.
+
+2003-09-29 Junichiro Kita <kita@kitaj.no-ip.com>
+	* plugin/*.rb: support category.
+	* plugin/category.rb: add.
+
+2003-09-25 Junichiro Kita <kita@kitaj.no-ip.com>
+	* plugin/*.rb: use @conf.shorten
+
+2003-09-10 TADA Tadashi <sho@spc.gr.jp>
+	* blog_style.rb: support to getnerate new date in Append mode.
+	* tdiary.conf.sample_ja: update referer_table.
+
+2003-08-22 TADA Tadashi <sho@spc.gr.jp>
+	* title-navi.rb: show title in the prev/next month.
+	* tdiary.conf.sample*: remove comment mail setting.
+
+2003-08-05 TADA Tadashi <sho@spc.gr.jp>
+	* remove plugin/edit.rb.
+	* release 1.5.5.
+
+2003-05-18 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: call apply_plugin begore shorten.
+
+2003-05-15 TADA Tadashi <sho@spc.gr.jp>
+	* release 1.5.4.
+
+2003-05-04 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: no use SERVER_PORT.
+
+2003-05-03 TADA Tadashi <sho@spc.gr.jp>
+	* add BlogRD style.
+
+2003-04-25 TADA Tadashi <sho@spc.gr.jp>
+	* recent-entry, recent-entry2, whatnew-list: remove 2nd parameter and support @options['apply_plugin'].
+	* whatsnew-list: RSS feed support. thanks Kazuhiro NISHIYAMA <zn@mbf.nifty.com>.
+
+2003-04-15 TADA Tadashi <sho@spc.gr.jp>
+	* add blog-style_ja.rb plugin for Japanese labels.
+	* add tdiary.conf.sample_ja.
+
+2003-03-03 TADA Tadashi <sho@spc.gr.jp>
+	* fix typo.
+
+2003-02-23 TADA Tadashi <sho@spc.gr.jp>
+	* BlogWiki style: fix bugs of blockquote grammer.
+	* release 1.5.3.
+
+2003-02-21 TADA Tadashi <sho@spc.gr.jp>
+	* BlogWiki style: modify blockquote grammar.
+	* modify TDiaryForm class only runnning on Blog mode.
+
+2003-02-20 TADA Tadashi <sho@spc.gr.jp>
+	* add BlogWiki style.
+
+2003-02-13 TADA Tadashi <sho@spc.gr.jp>
+	* follow to tDiary 1.5.2.20030212.
+
+2003-02-12 TADA Tadashi <sho@spc.gr.jp>
+	* document bugs fixed.
+
+2003-01-27 TADA Tadashi <sho@spc.gr.jp>
+	* support style: remove blogio.rb and add blog_style.rb. see UPDATE.
+
+2003-01-08 TADA Tadashi <sho@spc.gr.jp>
+	* archive.rb: insert <div> into <form> in archive_dropdown.
+
+2003-01-01 TADA Tadashi <sho@spc.gr.jp>
+	* README.en: update. thanks Mizuho <gha@intrastore.cdc.com>.
+
+2002-12-25 TADA Tadashi <sho@spc.gr.jp>
+	* release 1.5.2.
+
+2002-12-24 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: change last-modified of oldest data in @diaries.
+
+2002-12-20 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list.rb: refine extra_erb.
+
+2002-12-19 TADA Tadashi <sho@spc.gr.jp>
+	* lm.rb: add span.lm.
+
+2002-12-18 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list: adjust last modified of @diaries as whatsnew-list file.
+
+2002-12-13 TADA Tadashi <sho@spc.gr.jp>
+	* whatsnew-list: remove hidden article from the list.
+
+2002-11-25 TADA Tadashi <sho@spc.gr.jp>
+	* release 1.5.1.
+
+2002-11-24 TADA Tadashi <sho@spc.gr.jp>
+	* title_navi plugin: title_navi.max option.
+	* add README.en.
+
+2002-11-22 TADA Tadashi <sho@spc.gr.jp>
+	* item length limit on whatsnew-list and recent-entry[2].
+	* tdiary.conf.sample: fix typo.
+
+2002-11-21 TADA Tadashi <sho@spc.gr.jp>
+	* add plugin/recent-entry2.rb.
+	* add comments into plugin files.
+	* add README, COPYING.
+
+2002-11-20 TADA Tadashi <sho@spc.gr.jp>
+	* add arcgive_dropdown plugin.
+	* archive.rb: list to reverse.
+
+2002-11-18 TADA Tadashi <sho@spc.gr.jp>
+	* Initial revision

@@ -1,0 +1,149 @@
+#
+# tDiary blog kit configuration file (sample) $Revision: 1.13 $
+#
+
+#
+# data path
+#
+@data_path = '/home/foo/blog'
+
+#
+# option of whatsnew-list, recent-entry and recent-entry2
+#
+@options['apply_plugin'] = true
+
+#
+# option of whatsnew-list
+#
+#@options['whatsnew_list.rdf'] = './index.rdf'
+@options['whatsnew_list.rdf.description'] = 'description of your site.'
+
+#
+# options of last-modified plugin
+#
+#  If you want show last-modified below article, set this true.
+@options['lm.bottom'] = false
+#  last-modified style customize.
+@options['lm.style'] = 'Last update on %B %d, %Y %H:%M'
+
+#
+# options of blog-style plugin
+#
+#  date format of blog style.
+@options['blog.date_format'] = 'on %B %d, %Y %H:%M'
+
+#
+# options of title_navi plugin
+#
+#  max length of navigation button label.
+@options['title_navi.max'] = 30
+
+#
+# specify Blog style
+#   - No section anchor in the article.
+#   - automatic generate new date when update.
+#
+@style = 'Blog'
+#@style = 'BlogWiki' # if you want to write by Wiki style.
+#@style = 'BlogRD'   # if you want to write by RD style.
+
+#
+# site title
+#
+@html_title = 'my blog'
+
+#
+# header
+#   - hide sidebar when day mode only.
+#
+@header = <<HEADER
+<div class="adminmenu"><%= navi_user %></div>
+<h1>my blog</h1>
+<% unless @mode == 'day' %><div class="main"><% end %>
+HEADER
+
+#
+# footer
+#   - hide sidebar when day mode only.
+#   - show 'Recent Entiries', 'Recent Updates' and 'Archives'.
+#
+@footer = <<FOOTER
+<% unless @mode == 'day' %>
+</div>
+<div class="sidebar">
+
+<div class="sidemenu">Recent Entries:</div>
+<%=recent_entry%>
+
+<div class="sidemenu">Recent Updates:</div>
+<%=whatsnew_list%>
+
+<div class="sidemenu">Archives:</div>
+<%=archive%>
+
+</div>
+<% end %>
+<div class="adminmenu"><%= navi_admin %></div>
+FOOTER
+
+#
+# anchor of each articles
+#
+@date_format = '#'
+
+#
+# no section anchor
+#
+@section_anchor = ''
+
+#
+# specify the blog style theme
+#
+@theme = 'blog'
+
+#
+# default settins below
+#
+@no_referer = [
+	'^' + Regexp.quote( base_url ),  # your blog
+	'^http://localhost[:/]',
+	'^http://192.168.',
+	'^http://172.1[6789]',
+	'^http://172.2[0-9]',
+	'^http://172.3[01]',
+	'^http://10.',
+]
+
+@referer_table = [
+	['^http://www.tdiary.org/.*', 'tDiary.org'],
+	['^http://([^\.]*)\.tdiary.net/.*', 'tDiary.net[\1]'],
+	['^http://www.google.com/search.*?q=([^&]*).*', 'google(\1)'],
+	# 
+	# You must add a new rule above here. 
+	#  
+	# This rule abbreviates URLs which are not converted by the rules 
+	# above and have more than 50 characters. 
+	#
+	['^(.{50}).*$', '\1...'],
+]
+
+#
+# search engine robots
+#
+@options['bot'] = [
+	'^(Naverbot|Cowbot)-',
+	'^BlogLines/',
+	'^blogmap',
+	'^FAST-WebCrawler/',
+	'^Hatena Antenna/',
+	'MI[CK]AN/',
+	'^msnbot/',
+	'^NG/',
+	'^Openbot/',
+	'^samidare',
+	'^TAMATEBAKO/',
+	'^TomSoftAntenna'
+]
+
+@secure = false
+load_cgi_conf
